@@ -1,0 +1,24 @@
+//Colors
+
+$primary-color: #ef4b74;
+$header-color: #4d1ba8;
+$text-color: #0d1129;
+$link-color: $primary-color;
+
+$white: #ffffff;
+$light: #f0eef2;
+$gray: #a09ca6;
+$dark-gray: #a4a2a6;
+
+//Font Size
+
+$font-size-base: 16px;
+
+$font-size-large: floor(($font-size-base * 1.4)); // ~22px
+$font-size-small: floor(($font-size-base * .9)); // ~14px
+$font-size-extra-small: floor(($font-size-base * .8)); // ~12px
+
+$font-size-h1: floor(($font-size-base * 1.90)); // ~30px
+$font-size-h2: $font-size-large;
+$font-size-h4: $font-size-base;
+

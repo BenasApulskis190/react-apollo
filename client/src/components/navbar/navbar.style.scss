@@ -1,0 +1,27 @@
+@import '../../assets/sass/variables';
+
+nav {
+  margin-top: auto;
+  display: flex;
+  justify-content: flex-end;
+
+  a {
+    font-size: $font-size-large;
+    color: $white;
+    text-decoration: none;
+    transition: color .3s ease-in-out;
+    padding: 0 1.5625rem;
+
+    &:first-child {
+      padding-left: 0;
+    }
+
+    &:last-child {
+      padding-right: 0;
+    }
+
+    &:hover {
+      color: $link-color;
+    }
+  }
+}

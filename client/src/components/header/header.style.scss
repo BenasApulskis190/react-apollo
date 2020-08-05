@@ -1,0 +1,11 @@
+@import '../../assets/sass/variables';
+
+header {
+  background: url("../../assets/images/header-bg-img.png") no-repeat $header-color;
+  padding: 1rem 0 .6rem;
+
+  .logo {
+    max-width: 265px;
+    height: auto;
+  }
+}
