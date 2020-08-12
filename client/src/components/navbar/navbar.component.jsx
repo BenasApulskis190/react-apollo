@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useRef, cloneElement } from 'react';
-import { useQuery, gql } from '@apollo/client';
 
 import NavLink from '../navItem/nav-link.component';
 import DropDown from '../dropdown/dropdown.component';

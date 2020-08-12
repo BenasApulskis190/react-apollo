@@ -1,0 +1,26 @@
+@import '../../assets/sass/variables';
+
+.main-content {
+  flex: 1 100%;
+  max-width: 100%;
+
+  @include min(map-get($breakpoints, 'lg')) {
+    flex: 1 70%;
+    padding-right: 1rem;
+    max-width: 70%;
+  }
+}
+
+.side-bar {
+  flex: 1 100%;
+  max-width: 100%;
+  margin-top: 1rem;
+
+
+  @include min(map-get($breakpoints, 'lg')) {
+    flex: 1 30%;
+    max-width: 30%;
+    padding-left: 1rem;
+    margin-top: 0;
+  }
+}

@@ -1,0 +1,51 @@
+@import '../../assets/sass/variables';
+@import '../../assets/sass/mixins';
+
+footer {
+  background: $dark-gray;
+  padding: 1rem 0;
+  margin-top: 2rem;
+
+  p {
+    font-size: $font-size-small;
+    color: $footer-color;
+    margin: 0;
+  }
+
+  ul {
+    list-style: none;
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0 0 1rem 0;
+
+    li {
+      display: inline-block;
+
+      &::after {
+        content: "\2022";
+        display: inline-block;
+        color: $white;
+        padding: 0 0.625rem;
+      }
+
+      &:last-child::after {
+        display: none;
+      }
+
+      a {
+        color: $white;
+        text-decoration: none;
+        font-size: $font-size-extra-small;
+
+        @include min(map-get($breakpoints, 'md')) {
+          font-size: $font-size-base;
+        }
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

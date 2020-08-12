@@ -1,0 +1,32 @@
+@import '../../assets/sass/variables';
+@import '../../assets/sass/mixins';
+
+.InfoBoxes {
+  display: flex;
+  flex-wrap: wrap;
+  background: transparent;
+  background: $gradient;
+  padding: 1rem 0;
+
+
+  .info-box {
+    flex: 1 100%;
+    max-width: 100%;
+    padding: 1rem 0;
+    font-size: $text-color;
+
+    &:first-child {
+      padding-left: 0;
+    }
+
+    &:last-child {
+      padding-right: 0;
+    }
+
+    @include min(map-get($breakpoints, 'md')) {
+      flex: 1 33.33%;
+      max-width: 33.33%;
+      padding: 0 1rem;
+    }
+  }
+}

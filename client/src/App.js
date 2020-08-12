@@ -4,7 +4,6 @@ import { Route, Switch } from 'react-router-dom'
 import {
   ApolloClient,
   InMemoryCache,
-  gql,
   ApolloProvider
 } from '@apollo/client';
 
