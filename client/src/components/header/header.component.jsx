@@ -1,8 +1,10 @@
 import React from 'react'
-import './header.style.scss'
+import { useQuery, gql } from '@apollo/client';
+
 import logo from '../../assets/images/testpage-logo.svg';
 import NavBar from '../navbar/navbar.component';
-import { useQuery, gql } from '@apollo/client';
+
+import './header.style.scss'
 
 const Header = () => {
   const NAV_BAR_ITEMS = gql`
