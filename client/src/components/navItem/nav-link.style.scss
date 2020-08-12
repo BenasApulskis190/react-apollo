@@ -1,0 +1,17 @@
+@import '../../assets/sass/variables';
+
+.nav-item {
+  padding: 0 1.5rem;
+  position: relative;
+
+  a {
+    font-size: $font-size-large;
+    color: $white;
+    text-decoration: none;
+    transition: color .3s ease-in-out;
+
+    &:hover {
+      color: $link-color;
+    }
+  }
+}

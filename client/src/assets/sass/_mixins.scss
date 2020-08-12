@@ -1,0 +1,13 @@
+@function bp($bp) {
+  @return map-get($breakpoints, $bp);
+}
+
+@function container($container-size) {
+  @return map-get($breakpoints, $container-size);
+}
+
+@mixin min($bp, $max: 'null', $device: "screen") {
+    @media only #{$device} and (min-width: #{$bp}) {
+      @content;
+    }
+}

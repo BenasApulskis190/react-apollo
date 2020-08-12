@@ -17,25 +17,6 @@ const client = new ApolloClient({
   cache: new InMemoryCache()
 });
 
-client.query({
-  query: gql`
-      {
-          page {
-              main {
-                  title
-                  content
-              }
-              sidebar {
-                  title
-                  content
-              }
-              infoBoxes
-              footer
-          }
-      }
-  `
-}).then(result => console.log(result));
-
 
 function App() {
   return (

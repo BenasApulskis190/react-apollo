@@ -1,6 +1,22 @@
+@import 'mixins';
+
+$sm: 540px;
+$md: 720px;
+$lg: 960px;
+$xl: 1140px;
+
+$breakpoints: (
+    sm: $sm,
+    md: $md,
+    lg: $lg,
+    xl: $xl
+);
+
 //Colors
 
 $primary-color: #ef4b74;
+$primary-dark: #bf3b5c;
+$primary-light: #ff6f93;
 $header-color: #4d1ba8;
 $text-color: #0d1129;
 $link-color: $primary-color;
@@ -21,4 +37,8 @@ $font-size-extra-small: floor(($font-size-base * .8)); // ~12px
 $font-size-h1: floor(($font-size-base * 1.90)); // ~30px
 $font-size-h2: $font-size-large;
 $font-size-h4: $font-size-base;
+
+//dropdown
+
+$dropdown-border-radius: 4px
 
