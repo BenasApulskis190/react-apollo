@@ -1,7 +1,10 @@
 import React, { useState, useEffect, useRef, cloneElement } from 'react';
-import './navbar.style.scss'
+import { useQuery, gql } from '@apollo/client';
+
 import NavLink from '../navItem/nav-link.component';
 import DropDown from '../dropdown/dropdown.component';
+
+import './navbar.style.scss'
 
 const NavBar = ({menu}) => {
   const [activeSubmenu, setActiveSubmenu] = useState();
