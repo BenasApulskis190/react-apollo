@@ -14,6 +14,11 @@ const InfoBoxes = () => {
 
   const {loading, error, data} = useQuery(INFO_BOXES);
 
+  if (error) {
+    console.log(error);
+    return
+  }
+
   return !loading ? (
     <div className="InfoBoxes">
       {data.page.infoBoxes.map((box, index) => (<div className="info-box" key={index}>{box}</div>))}

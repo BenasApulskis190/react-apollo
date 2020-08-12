@@ -18,6 +18,10 @@ const Footer = () => {
   `;
   const {loading, error, data} = useQuery(FOOTER);
 
+  if (error) {
+    console.log(error);
+    return
+  }
 
   return !loading ? (
     <footer>

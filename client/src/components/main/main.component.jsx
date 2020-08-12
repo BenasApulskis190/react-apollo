@@ -1,6 +1,9 @@
 import React from 'react';
-import Card from '../card/card.component';
 import { gql, useQuery } from '@apollo/client';
+
+import Card from '../card/card.component';
+
+import './main.style.scss'
 
 const Main = () => {
   const MAIN_CONTENT = gql`
@@ -15,6 +18,11 @@ const Main = () => {
   `;
 
   const {loading, error, data} = useQuery(MAIN_CONTENT);
+
+  if (error) {
+    console.log(error);
+    return
+  }
 
   return !loading ? (
     <main>

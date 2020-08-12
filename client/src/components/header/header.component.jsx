@@ -27,6 +27,11 @@ const Header = () => {
 
   const {loading, error, data} = useQuery(NAV_BAR_ITEMS);
 
+  if (error) {
+    console.log(error);
+    return
+  }
+
   return (
     <header>
       <div className="container">
