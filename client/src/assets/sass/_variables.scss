@@ -42,5 +42,23 @@ $font-size-h4: $font-size-base;
 
 //dropdown
 
-$dropdown-border-radius: 4px
+$dropdown-border-radius: 4px;
+
+
+// Spinners
+
+$spinner-width: 2rem;
+$spinner-height: $spinner-width;
+$spinner-border-width: .25em;
+$spinner-border-secondary-color: $gray;
+
+$spinner-width-sm: 1rem;
+$spinner-height-sm: $spinner-width-sm;
+$spinner-border-width-sm: .2em;
+
+$spinner-width-lg: 4rem;
+$spinner-height-lg: $spinner-width-lg;
+$spinner-border-width-lg: .267em;
+
+$spinner-cloak-bg: rgba($white, 0.5);
 
