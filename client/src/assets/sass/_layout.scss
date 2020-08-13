@@ -11,7 +11,11 @@
 .column {
   display: flex;
   flex-direction: column;
-  flex: 1;
+  flex: 1 100%;
+
+  @include min(map-get($breakpoints, 'md')) {
+    flex: 1;
+  }
 }
 
 .container {

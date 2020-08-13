@@ -5,7 +5,7 @@ import DropDown from '../dropdown/dropdown.component';
 
 import './navbar.style.scss'
 
-const NavBar = ({menu}) => {
+const NavBar = ({isMobileOpen, menu}) => {
   const [activeSubmenu, setActiveSubmenu] = useState();
 
   function handleClick(e) {
@@ -63,7 +63,7 @@ const NavBar = ({menu}) => {
   };
 
   return (
-    <nav>
+    <nav className={isMobileOpen && 'open'}>
       {menu.map((item, index) => (
         <ListMenu {...item} key={index}/>
       ))}

@@ -1,17 +1,20 @@
 @import '../../assets/sass/variables';
 
-.nav-item {
-  padding: 0 1.5rem;
-  position: relative;
+a {
+  font-size: $font-size-large;
+  color: $white;
+  text-decoration: none;
+  transition: color .3s ease-in-out;
+  display: block;
+  padding: 1rem 0;
 
-  a {
-    font-size: $font-size-large;
-    color: $white;
-    text-decoration: none;
-    transition: color .3s ease-in-out;
+  @include min(map-get($breakpoints, 'md')) {
+    display: inline;
+    padding: 0;
+  }
 
-    &:hover {
-      color: $link-color;
-    }
+  &:hover {
+    color: $link-color;
   }
 }
+
