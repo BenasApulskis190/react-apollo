@@ -33,4 +33,8 @@ module.exports = gql`
     type Query {
         page: Page
     }
+
+    type Mutation {
+        submitContactForm(firstName: String, lastName: String, message: String):String
+    }
 `
